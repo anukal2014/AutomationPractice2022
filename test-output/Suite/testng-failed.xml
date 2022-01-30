@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://janautomation22-trials73.orangehrmlive.com/"/>
+  <test thread-count="5" name="launchAppWithCorrectCredencial(failed)">
+    <parameter name="password" value="r2ikK4@UDZ"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="com.automation.orghrm.testscripts.ContractTest">
+        <methods>
+          <include name="launchChrome"/>
+          <include name="LaunchApp"/>
+          <include name="enterCredentials"/>
+          <include name="TakeScreenShotOnFailure"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.automation.orghrm.testscripts.ContractTest -->
+    </classes>
+  </test> <!-- launchAppWithCorrectCredencial(failed) -->
+</suite> <!-- Failed suite [Suite] -->
