@@ -76,6 +76,7 @@ public class ContractTest {
 		String name = dateOpration();
 		if(result.getStatus() == result.FAILURE)
 		{
+			System.out.println("Test Case Failed - "+result.getTestName());
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File image = ts.getScreenshotAs(OutputType.FILE);
 			File destFile = new File("./screenshots/"+result.getName()+name+".png");
